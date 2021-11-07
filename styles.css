@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  background: #d6e1ff;
+  font-family: "Sora", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90vw;
+  max-width: 500px;
+  margin: auto 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background: white;
+}
+
+.card > * {
+  width: 80%;
+  margin: 1.5rem;
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  color: #2a3257;
+}
+
+.card p {
+  color: #7f8198;
+}
+
+#cancel-order {
+  margin-bottom: 2rem;
+  color: #9aa2b5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#change {
+  font-weight: 600;
+}
+
+#change:hover {
+  text-decoration: none;
+  color: purple;
+  opacity: 0.5;
+}
+
+.img {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.annual-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fe;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 0.75rem;
+}
+
+.annual-plan img {
+  width: 30%;
+}
+
+.annual-plan-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.annual-plan-left ul {
+  margin-left: 1rem;
+}
+
+li:first-child {
+  color: #2a3257;
+}
+
+.annual-plan li {
+  text-align: left;
+  list-style-type: none;
+}
+
+button {
+  font-size: 1rem;
+  padding: 1em 2em;
+  border-radius: 10px;
+  border: none;
+  background: #382ae1;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.75;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+#cancel-order:hover {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 25rem) {
+  .annual-plan img {
+    width: 100%;
+  }
+  .annual-plan-left {
+    font-size: 1.5em;
+  }
+  .annual-plan a {
+    font-size: 1.25em;
+  }
+  button {
+    font-size: 1.25rem;
+    padding: 1em 1em;
+  }
+}
